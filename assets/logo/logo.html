@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAI logo set</title>
+<link rel="icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090A;--text:#F5F7FA;--text-2:#9CA3AF;--line:rgba(245,247,250,.1);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,sans-serif;padding:48px 16px 96px;}
+.wrap{max-width:1180px;margin:0 auto;}
+h1{font:900 clamp(2rem,5vw,3.4rem)/1 Satoshi,sans-serif;letter-spacing:-.04em;}
+h2{font:900 1.4rem/1.1 Satoshi,sans-serif;letter-spacing:-.03em;margin:3rem 0 1rem;}
+.lede{color:var(--text-2);margin:.8rem 0 2rem;max-width:70ch;}
+.panel{border-radius:14px;padding:16px 20px 20px;margin-bottom:10px;overflow-x:auto;}
+.lbl{font:500 .68rem/1 JetBrains Mono,monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.6;}
+code{font:500 .68rem JetBrains Mono,monospace;opacity:.45;margin-left:.75rem;}
+.row{display:flex;align-items:flex-end;flex-wrap:wrap;gap:24px 32px;margin-top:16px;}
+figure{display:flex;flex-direction:column;align-items:flex-start;gap:8px;flex:none;}
+figcaption{font:500 .64rem JetBrains Mono,monospace;opacity:.5;}
+img{display:block;width:auto;}
+.dark{background:#0D1117;color:#F5F7FA;}
+.light{background:#F5F7FA;color:#08090A;}
+.accent{background:#3F8C67;color:#08090A;}
+.pngs{display:flex;gap:32px;align-items:flex-end;}
+.tabs{display:flex;flex-direction:column;gap:8px;}
+.tab{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:9px 9px 0 0;font:500 12px Inter,sans-serif;width:280px;}
+.tab img{width:16px;height:16px;}
+.tdark{background:#202124;color:#E8EAED;}
+.tlight{background:#fff;color:#202124;}
+/* loader demo: the outline wordmark filling from the bottom */
+.loader-demo{position:relative;height:120px;width:max-content;--logo-fg:#F5F7FA;}
+.loader-demo svg{height:100%;width:auto;display:block;}
+.loader-demo .fill{position:absolute;inset:0;clip-path:inset(100% 0 0 0);animation:rise 2.6s cubic-bezier(.6,0,.2,1) infinite;}
+.loader-demo .fill svg .ol{fill:var(--logo-fg);}
+.loader-demo .fill svg .ol-ac{fill:#3F8C67;}
+@keyframes rise{0%,8%{clip-path:inset(100% 0 0 0);}70%,100%{clip-path:inset(0 0 0 0);}}
+@media (prefers-reduced-motion:reduce){.loader-demo .fill{animation:none;clip-path:none;}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>SAI▍ — logo set</h1>
+  <p class="lede">Direction B. Every letter is outlined from Satoshi 900 (tagline: JetBrains Mono 500); no file depends on a loaded font. Colours are CSS variables with fallbacks (<code>--logo-fg</code>, <code>--logo-accent</code>, <code>--logo-muted</code>), so inline SVG can be re-themed; the “for dark / for light” files differ only in their fallbacks. Each file is shown through a plain &lt;img&gt;, at 16, 32, 64 and 256px tall.</p>
+  
+  <div class="panel dark">
+    <span class="lbl">Wordmark · for dark</span><code>wordmark-dark.svg</code>
+    <div class="row"><figure><img src="wordmark-dark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="wordmark-dark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="wordmark-dark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="wordmark-dark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Wordmark · for light</span><code>wordmark-light.svg</code>
+    <div class="row"><figure><img src="wordmark-light.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="wordmark-light.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="wordmark-light.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="wordmark-light.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Wordmark, blinking · for dark (static under reduced motion)</span><code>wordmark-blink-dark.svg</code>
+    <div class="row"><figure><img src="wordmark-blink-dark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="wordmark-blink-dark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="wordmark-blink-dark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="wordmark-blink-dark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Wordmark, blinking · for light</span><code>wordmark-blink-light.svg</code>
+    <div class="row"><figure><img src="wordmark-blink-light.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="wordmark-blink-light.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="wordmark-blink-light.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="wordmark-blink-light.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Lockup, horizontal · for dark</span><code>lockup-horizontal-dark.svg</code>
+    <div class="row"><figure><img src="lockup-horizontal-dark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="lockup-horizontal-dark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="lockup-horizontal-dark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="lockup-horizontal-dark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Lockup, horizontal · for light</span><code>lockup-horizontal-light.svg</code>
+    <div class="row"><figure><img src="lockup-horizontal-light.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="lockup-horizontal-light.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="lockup-horizontal-light.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="lockup-horizontal-light.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Lockup, stacked · for dark</span><code>lockup-stacked-dark.svg</code>
+    <div class="row"><figure><img src="lockup-stacked-dark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="lockup-stacked-dark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="lockup-stacked-dark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="lockup-stacked-dark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Lockup, stacked · for light</span><code>lockup-stacked-light.svg</code>
+    <div class="row"><figure><img src="lockup-stacked-light.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="lockup-stacked-light.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="lockup-stacked-light.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="lockup-stacked-light.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Mono white (hollow cursor) · on dark</span><code>mono-white.svg</code>
+    <div class="row"><figure><img src="mono-white.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel accent">
+    <span class="lbl">Mono white (hollow cursor) · on accent</span><code>mono-white.svg</code>
+    <div class="row"><figure><img src="mono-white.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mono-white.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Mono black (hollow cursor) · on light</span><code>mono-black.svg</code>
+    <div class="row"><figure><img src="mono-black.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel accent">
+    <span class="lbl">Mono black (hollow cursor) · on accent</span><code>mono-black.svg</code>
+    <div class="row"><figure><img src="mono-black.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mono-black.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Tagline alone (optional element) · for dark</span><code>tagline-dark.svg</code>
+    <div class="row"><figure><img src="tagline-dark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="tagline-dark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="tagline-dark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="tagline-dark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Tagline alone · for light</span><code>tagline-light.svg</code>
+    <div class="row"><figure><img src="tagline-light.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="tagline-light.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="tagline-light.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="tagline-light.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">Mark · the cursor alone · on dark</span><code>mark.svg</code>
+    <div class="row"><figure><img src="mark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">Mark · the cursor alone · on light</span><code>mark.svg</code>
+    <div class="row"><figure><img src="mark.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="mark.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel dark">
+    <span class="lbl">favicon.svg · tile lifts to #1A1F27 under prefers-color-scheme: dark · on dark</span><code>favicon.svg</code>
+    <div class="row"><figure><img src="favicon.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+  <div class="panel light">
+    <span class="lbl">favicon.svg · tile lifts to #1A1F27 under prefers-color-scheme: dark · on light</span><code>favicon.svg</code>
+    <div class="row"><figure><img src="favicon.svg" alt="" style="height:16px"><figcaption>16px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:32px"><figcaption>32px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:64px"><figcaption>64px</figcaption></figure><figure><img src="favicon.svg" alt="" style="height:256px"><figcaption>256px</figcaption></figure></div>
+  </div>
+
+  <h2>Raster exports</h2>
+  <div class="panel dark"><span class="lbl">favicon-32.png · apple-touch-icon.png (180, full-bleed; iOS applies its own mask)</span>
+    <div class="row pngs">
+      <figure><img src="favicon-32.png" alt="" style="height:16px"><figcaption>32.png @16</figcaption></figure>
+      <figure><img src="favicon-32.png" alt="" style="height:32px"><figcaption>32.png @32</figcaption></figure>
+      <figure><img src="apple-touch-icon.png" alt="" style="height:90px;border-radius:20px"><figcaption>180.png (masked preview)</figcaption></figure>
+      <div class="tabs" style="margin-left:auto">
+        <div class="tab tdark"><img src="favicon.svg" alt="">Sai Kumar — Full-Stack Developer</div>
+        <div class="tab tlight"><img src="favicon.svg" alt="">Sai Kumar — Full-Stack Developer</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Outline wordmark (for the loader)</h2>
+  <div class="panel dark"><span class="lbl">wordmark-outline.svg · one &lt;path id&gt; per letter: logo-s, logo-a, logo-i, logo-cursor · demo: fill from the bottom</span>
+    <div class="row">
+      <figure><img src="wordmark-outline.svg" alt="" style="height:120px"><figcaption>outline</figcaption></figure>
+      <figure><div class="loader-demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.9 -77 192.9 79.9" aria-hidden="true"><style>.fg{fill:var(--logo-fg,#F5F7FA)}.ac{fill:var(--logo-accent,#3F8C67)}.tg{fill:var(--logo-muted,#9CA3AF)}.ol{fill:none;stroke:var(--logo-fg,#F5F7FA);stroke-width:1.6;stroke-linejoin:round}.ol-ac{stroke:var(--logo-accent,#3F8C67)}</style><path id="logo-s" class="ol" d="M3.6-52.5L3.6-52.5Q3.6-62.5 11.3-69.0Q18.9-75.4 30.8-75.4Q42.7-75.4 49.7-69.3Q56.7-63.1 56.7-52.6L56.7-52.6L40.6-52.6Q40.6-56.5 37.9-58.8Q35.2-61 30.6-61L30.6-61Q25.6-61 22.7-58.9Q19.8-56.8 19.8-53.1L19.8-53.1Q19.8-49.8 21.6-48.0Q23.4-46.1 27.3-45.3L27.3-45.3L38.4-43Q48.4-41 53.2-36Q57.9-31 57.9-22.3L57.9-22.3Q57.9-11.6 50.2-5.2Q42.5 1.3 29.7 1.3L29.7 1.3Q17.3 1.3 9.9-4.9Q2.5-11.1 2.5-21.5L2.5-21.5L18.6-21.5Q18.6-17.4 21.5-15.3Q24.4-13.1 29.8-13.1L29.8-13.1Q35.3-13.1 38.5-15.2Q41.7-17.2 41.7-20.7L41.7-20.7Q41.7-23.8 40.2-25.5Q38.6-27.2 34.9-27.9L34.9-27.9L23.6-30.2Q3.6-34.3 3.6-52.5Z"/><path id="logo-a" class="ol" d="M82-15.6L76.7 0L59.8 0L86.2-74L102-74L128.3 0L111.1 0L105.9-15.6L82-15.6ZM92-45L92-45L86.7-29.2L101.3-29.2L96-45Q94.3-50.2 94-52.2L94-52.2Q93.6-49.6 92-45Z"/><path id="logo-i" class="ol" d="M134.9-74L151.1-74L151.1 0L134.9 0L134.9-74Z"/><path id="logo-cursor" class="ol ol-ac" d="M161.6 -74H190.2Q192.2 -74 192.2 -72V-2Q192.2 0 190.2 0H161.6Q159.6 0 159.6 -2V-72Q159.6 -74 161.6 -74Z"/></svg><div class="fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.9 -77 192.9 79.9" aria-hidden="true"><style>.fg{fill:var(--logo-fg,#F5F7FA)}.ac{fill:var(--logo-accent,#3F8C67)}.tg{fill:var(--logo-muted,#9CA3AF)}.ol{fill:none;stroke:var(--logo-fg,#F5F7FA);stroke-width:1.6;stroke-linejoin:round}.ol-ac{stroke:var(--logo-accent,#3F8C67)}</style><path id="logo-s" class="ol" d="M3.6-52.5L3.6-52.5Q3.6-62.5 11.3-69.0Q18.9-75.4 30.8-75.4Q42.7-75.4 49.7-69.3Q56.7-63.1 56.7-52.6L56.7-52.6L40.6-52.6Q40.6-56.5 37.9-58.8Q35.2-61 30.6-61L30.6-61Q25.6-61 22.7-58.9Q19.8-56.8 19.8-53.1L19.8-53.1Q19.8-49.8 21.6-48.0Q23.4-46.1 27.3-45.3L27.3-45.3L38.4-43Q48.4-41 53.2-36Q57.9-31 57.9-22.3L57.9-22.3Q57.9-11.6 50.2-5.2Q42.5 1.3 29.7 1.3L29.7 1.3Q17.3 1.3 9.9-4.9Q2.5-11.1 2.5-21.5L2.5-21.5L18.6-21.5Q18.6-17.4 21.5-15.3Q24.4-13.1 29.8-13.1L29.8-13.1Q35.3-13.1 38.5-15.2Q41.7-17.2 41.7-20.7L41.7-20.7Q41.7-23.8 40.2-25.5Q38.6-27.2 34.9-27.9L34.9-27.9L23.6-30.2Q3.6-34.3 3.6-52.5Z"/><path id="logo-a" class="ol" d="M82-15.6L76.7 0L59.8 0L86.2-74L102-74L128.3 0L111.1 0L105.9-15.6L82-15.6ZM92-45L92-45L86.7-29.2L101.3-29.2L96-45Q94.3-50.2 94-52.2L94-52.2Q93.6-49.6 92-45Z"/><path id="logo-i" class="ol" d="M134.9-74L151.1-74L151.1 0L134.9 0L134.9-74Z"/><path id="logo-cursor" class="ol ol-ac" d="M161.6 -74H190.2Q192.2 -74 192.2 -72V-2Q192.2 0 190.2 0H161.6Q159.6 0 159.6 -2V-72Q159.6 -74 161.6 -74Z"/></svg></div></div><figcaption>fill from the bottom</figcaption></figure>
+    </div>
+  </div>
+</main>
+</body>
+</html>

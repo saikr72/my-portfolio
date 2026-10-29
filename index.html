@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Kumar — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Sai Kumar, a Full-Stack Developer specializing in PHP, Laravel, JavaScript, React, MySQL, APIs, AWS and modern web applications.">
+<meta name="theme-color" content="#08090A">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<meta property="og:title" content="Sai Kumar — Full-Stack Developer">
+<meta property="og:description" content="I build web applications that solve real-world problems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sai Kumar",
+  "jobTitle": "Full-Stack Developer",
+  "knowsAbout": ["PHP", "Laravel", "JavaScript", "React", "MySQL", "AWS"]
+}
+</script>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+<script>
+  /* Flag JS + reduced motion before first paint so CSS can pick the right initial state. */
+  document.documentElement.classList.add('js');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('reduced');
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- 0. Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-word">
+    <!-- SAI▍ (generated from assets/logo/wordmark-dark.svg). The only inline copy: main.js clones it for the fill layer, nav and menu. -->
+    <span class="loader-outline" id="logo-src"><svg class="logo-sai" viewBox="2.5 -75.4 189.7 76.7" aria-hidden="true" focusable="false"><path class="lg-l" d="M3.6-52.5L3.6-52.5Q3.6-62.5 11.3-69.0Q18.9-75.4 30.8-75.4Q42.7-75.4 49.7-69.3Q56.7-63.1 56.7-52.6L56.7-52.6L40.6-52.6Q40.6-56.5 37.9-58.8Q35.2-61 30.6-61L30.6-61Q25.6-61 22.7-58.9Q19.8-56.8 19.8-53.1L19.8-53.1Q19.8-49.8 21.6-48.0Q23.4-46.1 27.3-45.3L27.3-45.3L38.4-43Q48.4-41 53.2-36Q57.9-31 57.9-22.3L57.9-22.3Q57.9-11.6 50.2-5.2Q42.5 1.3 29.7 1.3L29.7 1.3Q17.3 1.3 9.9-4.9Q2.5-11.1 2.5-21.5L2.5-21.5L18.6-21.5Q18.6-17.4 21.5-15.3Q24.4-13.1 29.8-13.1L29.8-13.1Q35.3-13.1 38.5-15.2Q41.7-17.2 41.7-20.7L41.7-20.7Q41.7-23.8 40.2-25.5Q38.6-27.2 34.9-27.9L34.9-27.9L23.6-30.2Q3.6-34.3 3.6-52.5Z"/><path class="lg-l" d="M82-15.6L76.7 0L59.8 0L86.2-74L102-74L128.3 0L111.1 0L105.9-15.6L82-15.6ZM92-45L92-45L86.7-29.2L101.3-29.2L96-45Q94.3-50.2 94-52.2L94-52.2Q93.6-49.6 92-45Z"/><path class="lg-l" d="M134.9-74L151.1-74L151.1 0L134.9 0L134.9-74Z"/><rect class="lg-c" x="159.6" y="-74" width="32.6" height="74" rx="2"/></svg></span>
+    <span class="loader-fill" data-logo></span>
+  </div>
+  <div class="loader-meta">
+    <span class="loader-msg" id="loader-msg"></span>
+    <span class="loader-count" id="loader-count">000</span>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"><span class="cursor-label"></span></span></div>
+
+<!-- 1. Nav -->
+<header class="site-header" id="site-header">
+  <nav class="nav-pill" id="nav-pill" aria-label="Primary">
+    <a class="nav-mark" href="#hero" data-logo aria-label="Sai Kumar, back to top"></a>
+    <ul class="nav-links" id="nav-links"></ul>
+    <a class="nav-cta" href="#contact"><span class="nav-cta-dot" aria-hidden="true"></span>Let's talk</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </nav>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="menu-top">
+    <span class="nav-mark" data-logo aria-hidden="true"></span>
+    <button class="menu-close" id="menu-close" type="button">Close</button>
+  </div>
+  <ul class="menu-links" id="menu-links"></ul>
+  <a class="btn btn-primary menu-cta" href="#contact">Let's talk</a>
+</div>
+
+<main id="main">
+
+  <!-- 2. Hero -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-pin" id="hero-pin">
+      <div class="hero-stage" id="hero-stage">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <h1 class="hero-name" id="hero-title">
+          <span class="hero-word hero-word--first" id="hero-first" aria-hidden="true"></span>
+          <span class="hero-word hero-word--last" id="hero-last" aria-hidden="true"></span>
+          <span class="sr-only" id="hero-title-text"></span>
+        </h1>
+
+        <div class="hero-canvas-wrap" id="hero-canvas-wrap">
+          <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+          <div class="hero-tags" id="hero-tags" aria-hidden="true"></div>
+          <div class="hero-fallback" id="hero-fallback" hidden></div>
+        </div>
+
+        <div class="hero-meta" id="hero-meta">
+          <p class="hero-kicker" id="hero-kicker"><span class="dot" aria-hidden="true"></span><span></span></p>
+          <p class="hero-cue" id="hero-cue" aria-hidden="true"><span class="hero-cue-bar"><span></span></span>Scroll</p>
+        </div>
+
+        <!-- Text equivalent of the 3D stack for assistive tech. -->
+        <div class="sr-only">
+          <p>The stack, top to bottom:</p>
+          <ol id="hero-layers-text"></ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-intro container" id="hero-intro">
+      <h2 class="hero-headline display" id="hero-headline"></h2>
+      <p class="hero-sub" id="hero-sub"></p>
+      <ul class="hero-stack" id="hero-stack" aria-label="Core stack"></ul>
+      <div class="hero-ctas" id="hero-ctas"></div>
+    </div>
+  </section>
+
+  <!-- 3. Marquee -->
+  <section class="marquee" id="marquee" aria-label="Core technologies">
+    <ul class="sr-only" id="marquee-list"></ul>
+    <div class="marquee-band marquee-band--back" aria-hidden="true"><div class="marquee-skew"><div class="marquee-track"></div></div></div>
+    <div class="marquee-band marquee-band--front" aria-hidden="true"><div class="marquee-skew"><div class="marquee-track"></div></div></div>
+  </section>
+
+  <!-- 4. Ch 01 — About (pinned) -->
+  <section class="chapter about" id="about" aria-labelledby="about-title">
+    <div class="about-pin container" id="about-pin">
+      <header class="about-head" id="about-head">
+        <p class="eyebrow" id="about-eyebrow"></p>
+        <h2 class="about-title display" id="about-title"></h2>
+        <p class="about-copy" id="about-copy"></p>
+      </header>
+      <div class="about-body" id="about-body">
+        <ol class="about-cards" id="about-cards"></ol>
+        <div class="about-visual" id="about-visual">
+          <canvas class="about-canvas" id="about-canvas" aria-hidden="true"></canvas>
+          <ol class="about-fallback" id="about-fallback" aria-hidden="true" hidden></ol>
+          <p class="about-caption" id="about-caption" aria-hidden="true"></p>
+        </div>
+        <div class="about-dots" id="about-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Ch 02 — The toolset -->
+  <section class="chapter tools" id="stack" aria-labelledby="tools-title">
+    <div class="container">
+      <header class="tools-head">
+        <p class="eyebrow" id="tools-eyebrow"></p>
+        <h2 class="chapter-title display" id="tools-title"></h2>
+        <p class="chapter-sub" id="tools-sub"></p>
+      </header>
+      <div class="tools-grid">
+        <div class="tools-canvas-wrap" id="tools-canvas-wrap" data-cursor="Drag" tabindex="0" role="group"
+             aria-label="Skill constellation. Drag, or use the left and right arrow keys, to turn it. The same tools are listed in the panel." >
+          <canvas class="tools-canvas" id="tools-canvas" aria-hidden="true"></canvas>
+          <div class="tools-labels" id="tools-labels" aria-hidden="true"></div>
+          <p class="tools-hint" aria-hidden="true"><span>←</span> Drag to turn <span>→</span></p>
+          <p class="tools-fallback" id="tools-fallback" hidden>3D view unavailable on this device — every tool is listed in the panel.</p>
+        </div>
+        <div class="tools-panel">
+          <div class="tools-chips" id="tools-chips" role="group" aria-label="Filter by category"></div>
+          <div class="tools-list" id="tools-list" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Ch 03 — Selected work (pinned theatre) -->
+  <section class="chapter work" id="work" aria-labelledby="work-title">
+    <header class="container work-intro" id="work-intro">
+      <p class="eyebrow" id="work-eyebrow"></p>
+      <h2 class="work-mega display" id="work-title"></h2>
+      <p class="chapter-sub" id="work-sub"></p>
+    </header>
+    <div class="theatre" id="theatre">
+      <div class="theatre-layers" id="theatre-layers"></div>
+      <nav class="theatre-rail" id="theatre-rail" aria-label="Projects"></nav>
+    </div>
+  </section>
+
+  <!-- 7. Ch 04 — A request's path (pinned) -->
+  <section class="chapter path" id="path" aria-labelledby="path-title">
+    <div class="path-pin container" id="path-pin">
+      <header class="path-head" id="path-head">
+        <p class="eyebrow" id="path-eyebrow"></p>
+        <h2 class="path-title display" id="path-title"></h2>
+        <p class="chapter-sub" id="path-sub"></p>
+      </header>
+      <div class="path-body" id="path-body">
+        <div class="path-stack" id="path-stack">
+          <div class="path-rail" aria-hidden="true"><span class="path-rail-fill"></span><span class="path-packet" id="path-packet"></span></div>
+          <ol class="path-layers" id="path-layers"></ol>
+        </div>
+        <div class="path-term">
+          <h3 class="path-term-title" id="path-term-title"></h3>
+          <p class="path-term-sub" id="path-term-sub"></p>
+          <div class="terminal" id="api-terminal"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Ch 05 — The data model -->
+  <section class="chapter data" id="data" aria-labelledby="data-title">
+    <div class="container">
+      <header class="data-head" id="data-head">
+        <p class="eyebrow" id="data-eyebrow"></p>
+        <h2 class="chapter-title display" id="data-title"></h2>
+        <p class="chapter-sub" id="data-sub"></p>
+      </header>
+      <div class="erd-wrap" id="erd-wrap"></div>
+      <ul class="erd-legend" id="erd-legend"></ul>
+    </div>
+  </section>
+
+  <!-- 9. Ch 06 — Journey (pinned, horizontal) -->
+  <section class="chapter journey" id="journey" aria-labelledby="journey-title">
+    <div class="journey-pin" id="journey-pin">
+      <div class="journey-progress" aria-hidden="true"><span></span></div>
+      <header class="journey-band" id="journey-band">
+        <p class="eyebrow" id="journey-eyebrow"></p>
+        <h2 class="journey-title display" id="journey-title"></h2>
+        <p class="journey-range" id="journey-range" aria-hidden="true"></p>
+      </header>
+      <div class="journey-viewport">
+        <ol class="journey-track" id="journey-track"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Experience -->
+  <section class="chapter experience" id="experience" aria-labelledby="exp-title">
+    <div class="container">
+      <header class="exp-head" id="exp-head">
+        <p class="eyebrow" id="exp-eyebrow"></p>
+        <h2 class="chapter-title display" id="exp-title"></h2>
+      </header>
+      <ol class="exp-list" id="exp-list"></ol>
+      <div class="process" id="process">
+        <h3 class="process-title" id="process-title"></h3>
+        <p class="process-sub" id="process-sub"></p>
+        <ol class="process-steps" id="process-steps"></ol>
+      </div>
+      <div class="terminal terminal--whoami" id="whoami-terminal"></div>
+    </div>
+  </section>
+
+  <!-- 11. Contact -->
+  <section class="chapter contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <p class="eyebrow" id="contact-eyebrow"></p>
+      <h2 class="contact-title display" id="contact-title"></h2>
+      <p class="contact-sub" id="contact-sub"></p>
+      <ul class="contact-links" id="contact-links"></ul>
+      <div class="contact-more" id="contact-more" hidden></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-word" id="footer-word" aria-hidden="true"></div>
+  <div class="footer-bar container">
+    <p id="footer-copy"></p>
+    <p class="footer-stack" id="footer-stack"></p>
+  </div>
+</footer>
+
+<!-- Case-study drawer -->
+<div class="drawer" id="case" role="dialog" aria-modal="true" aria-labelledby="case-title" hidden>
+  <div class="drawer-panel" id="case-panel" data-lenis-prevent>
+    <div class="drawer-bar">
+      <span class="drawer-count" id="case-count"></span>
+      <button class="drawer-close" id="case-close" type="button">Close <span aria-hidden="true">✕</span></button>
+    </div>
+    <div class="drawer-body" id="case-body"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/three-scenes.js"></script>
+</body>
+</html>
